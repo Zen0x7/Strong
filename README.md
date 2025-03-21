@@ -18,3 +18,5 @@
 <a href="https://sonarcloud.io/project/overview?id=Zen0x7_Strong"><img src="https://sonarcloud.io/api/project_badges/measure?project=Zen0x7_Strong&metric=security_rating" alt="Security"></a>
 <a href="https://sonarcloud.io/project/overview?id=Zen0x7_Strong"><img src="https://sonarcloud.io/api/project_badges/measure?project=Zen0x7_Strong&metric=sqale_rating" alt="Maintainability"></a>
 </p>
+
+> This software has been built using [this documentation](https://laravel.com/docs/11.x/strings) and is being distributed based on Boost License. 
