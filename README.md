@@ -23,4 +23,12 @@ Documentation is available on <a href="https://zen0x7.github.io/Strong" target="
 <a href="https://sonarcloud.io/project/overview?id=Zen0x7_Strong"><img src="https://sonarcloud.io/api/project_badges/measure?project=Zen0x7_Strong&metric=sqale_rating" alt="Maintainability"></a>
 </p>
 
+## About
+
+**Strong** is a **C++23** algorithm collection for **Strings**. Available methods are well documented and tested.
+
+> Pull requests that doesn't pass the pipeline will not accepted.
+
+## Disclaimer
+
 > This software has been built using [this documentation](https://laravel.com/docs/11.x/strings) and is being distributed under Boost License terms. 
