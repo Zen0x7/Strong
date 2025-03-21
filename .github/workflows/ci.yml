@@ -1,0 +1,21 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    container:
+      image: iantorres/boosted:1.87.0-debug
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and test
+        run: |
+          mkdir build
+          cd build
+          cmake .. -DBUILD_TESTS=ON -DCMAKE_BUILD_TYPE=Debug
+          make -j4
+          cd ../bin
+          ./tests
