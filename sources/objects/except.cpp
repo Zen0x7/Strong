@@ -5,9 +5,6 @@
 //    (See accompanying file LICENSE_1_0.txt or copy at
 //          https://www.boost.org/LICENSE_1_0.txt)
 
-#include <iostream>
-#include <string>
-
 namespace strong {
 std::optional<std::string> except(const std::string_view content,
                                   const std::string_view search) {
