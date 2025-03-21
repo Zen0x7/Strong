@@ -9,10 +9,10 @@ namespace strong {
 std::optional<std::string_view> between(std::string_view content,
                                         const std::string_view begin,
                                         const std::string_view end) {
-  std::size_t begin_pos = content.find(begin);
+  const std::size_t begin_pos = content.find(begin);
   if (begin_pos == std::string_view::npos) return std::nullopt;
 
-  std::size_t end_pos = content.find(end, begin_pos + begin.size());
+  const std::size_t end_pos = content.find(end, begin_pos + begin.size());
   if (end_pos == std::string_view::npos) return std::nullopt;
 
   return content.substr(begin_pos + begin.size(),
