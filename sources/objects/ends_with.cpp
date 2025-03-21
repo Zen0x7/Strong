@@ -1,4 +1,4 @@
-#include <strong/char_at.hpp>
+#include <strong/ends_with.hpp>
 
 //          Copyright Ian Torres 2025.
 // Distributed under the Boost Software License, Version 1.0.
@@ -6,12 +6,7 @@
 //          https://www.boost.org/LICENSE_1_0.txt)
 
 namespace strong {
-std::optional<unsigned char> char_at(const std::string_view content,
-                                     const std::size_t at) {
-  if (at >= content.size()) {
-    return std::nullopt;
-  }
-
-  return content[at];
+bool ends_with(const std::string_view content, const std::string_view search) {
+  return content.ends_with(search);
 }
 }  // namespace strong

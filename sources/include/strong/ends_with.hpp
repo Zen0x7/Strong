@@ -1,17 +1,24 @@
-#include <strong/char_at.hpp>
+#pragma once
 
 //          Copyright Ian Torres 2025.
 // Distributed under the Boost Software License, Version 1.0.
 //    (See accompanying file LICENSE_1_0.txt or copy at
 //          https://www.boost.org/LICENSE_1_0.txt)
 
-namespace strong {
-std::optional<unsigned char> char_at(const std::string_view content,
-                                     const std::size_t at) {
-  if (at >= content.size()) {
-    return std::nullopt;
-  }
+#ifndef STRONG_ENDS_WITH_HPP
+#define STRONG_ENDS_WITH_HPP
 
-  return content[at];
-}
+#include <string_view>
+
+namespace strong {
+/**
+ * Ends with
+ *
+ * @param content
+ * @param search
+ * @return bool
+ */
+bool ends_with(std::string_view content, std::string_view search);
 }  // namespace strong
+
+#endif
