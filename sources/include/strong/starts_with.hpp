@@ -3,7 +3,6 @@
 #ifndef STRONG_STARTS_WITH_HPP
 #define STRONG_STARTS_WITH_HPP
 
-#include <string>
 #include <string_view>
 
 namespace strong {
