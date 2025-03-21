@@ -10,11 +10,11 @@ namespace strong {
     /**
      * Starts with
      *
-     * @param string
-     * @param query
+     * @param content
+     * @param search
      * @return bool
      */
-    bool starts_with(const std::string &string, std::string_view query);
+    bool starts_with(std::string_view content, std::string_view search);
 }
 
 #endif
