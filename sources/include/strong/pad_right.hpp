@@ -13,12 +13,12 @@
 
 namespace strong {
 /**
- * Pad right
+ * Retrieves a right padded string.
  *
- * @param content
- * @param length
- * @param pad
- * @return std::string
+ * @param content The string that will be used.
+ * @param length The length of final string.
+ * @param pad The character used as pad.
+ * @return The padded string. If the length used is smaller than the content then returns the content.
  */
 std::string pad_right(std::string_view content, std::size_t length, char pad);
 }  // namespace strong

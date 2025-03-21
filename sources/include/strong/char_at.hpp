@@ -13,11 +13,11 @@
 
 namespace strong {
 /**
- * Char at
+ * Retrieve the char on a specific index.
  *
- * @param content
- * @param at
- * @return std::optional<unsigned char>
+ * @param content The string that will be used.
+ * @param at The index that will be used.
+ * @return The optional char.
  */
 std::optional<unsigned char> char_at(std::string_view content, std::size_t at);
 }  // namespace strong

@@ -13,11 +13,11 @@
 
 namespace strong {
 /**
- * Except
+ * Retrieves the string without something.
  *
- * @param content
- * @param search
- * @return std::optional<std::string>
+ * @param content The string that will be used.
+ * @param search The string that will be searched.
+ * @return The optional string.
  */
 std::optional<std::string> except(std::string_view content,
                                   std::string_view search);

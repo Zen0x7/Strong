@@ -12,11 +12,11 @@
 
 namespace strong {
 /**
- * Is
+ * Determines if content complains with some regular expression.
  *
- * @param content
- * @param expression
- * @return bool
+ * @param content The string that will be used.
+ * @param expression The regular expression that will be used.
+ * @return The boolean result.
  */
 bool is(std::string_view content, std::string_view expression);
 }  // namespace strong

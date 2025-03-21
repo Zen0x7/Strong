@@ -13,12 +13,12 @@
 
 namespace strong {
 /**
- * Replace
+ * Replaces a portion of string with something.
  *
- * @param content
- * @param find
- * @param with
- * @return std::string
+ * @param content The string that will be used.
+ * @param find The string that will be replaced.
+ * @param with The replacement.
+ * @return The replaced string.
  */
 std::string replace(std::string_view content, std::string_view find,
                     std::string_view with);
