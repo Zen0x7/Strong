@@ -1,5 +1,7 @@
 <p align="center"><a href="https://strong.iantorres.cl" target="_blank"><img src="./logo.png" width="512" alt="Strong"></a></p>
 
+> Documentation is available on [GitHub Pages](https://zen0x7.github.io/Strong).
+
 <p align="center">
 <a href="https://github.com/Zen0x7/Strong/actions/workflows/ci.yml"><img src="https://github.com/Zen0x7/Strong/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
 <a href="https://codecov.io/gh/Zen0x7/Strong"><img src="https://codecov.io/gh/Zen0x7/Strong/branch/master/graph/badge.svg?token=UDC2QDDVAJ" alt="Coverage"></a>
@@ -19,4 +21,4 @@
 <a href="https://sonarcloud.io/project/overview?id=Zen0x7_Strong"><img src="https://sonarcloud.io/api/project_badges/measure?project=Zen0x7_Strong&metric=sqale_rating" alt="Maintainability"></a>
 </p>
 
-> This software has been built using [this documentation](https://laravel.com/docs/11.x/strings) and is being distributed based on Boost License. 
+> This software has been built using [this documentation](https://laravel.com/docs/11.x/strings) and is being distributed under Boost License terms. 
