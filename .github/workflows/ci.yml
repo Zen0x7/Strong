@@ -23,6 +23,7 @@ jobs:
           make -j4
           cd ../bin
           ./tests
+          cd ..
           lcov --capture --directory . --output-file coverage.info --no-external
           lcov --remove coverage.info '/usr/*' '*/tests/*' '*/vendor/*' --output-file coverage.filtered.info
           lcov --list coverage.info

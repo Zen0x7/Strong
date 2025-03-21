@@ -11,6 +11,7 @@ include(FetchContent)
 file(GLOB_RECURSE SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/sources/objects/*.cpp")
 file(GLOB_RECURSE TESTS CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/tests/*.cc")
 
+set(CMAKE_CXX_FLAGS "-Wall -Wextra")
 set(CMAKE_CXX_FLAGS_DEBUG "-g -O0 --coverage")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 
@@ -35,4 +36,4 @@ if (BUILD_TESTS)
     gtest_discover_tests(tests)
 endif()
 
-add_executable(strings main.cpp)
+add_executable(strings main.cpp ${SOURCES})
