@@ -7,6 +7,6 @@
 
 namespace strong {
 bool contains(const std::string_view content, const std::string_view search) {
-  return content.find(search) != std::string_view::npos;
+  return content.contains(search);
 }
 }  // namespace strong
