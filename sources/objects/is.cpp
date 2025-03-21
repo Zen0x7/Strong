@@ -12,7 +12,7 @@ bool is(const std::string_view content, const std::string_view expression) {
   try {
     const std::regex pattern(expression.begin(), expression.end());
     return std::regex_match(content.begin(), content.end(), pattern);
-  } catch (const std::regex_error& e) {
+  } catch (const std::regex_error& /*e*/) {
     return false;
   }
 }
