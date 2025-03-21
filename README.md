@@ -1,6 +1,8 @@
 <p align="center"><a href="https://strong.iantorres.cl" target="_blank"><img src="./logo.png" width="512" alt="Strong"></a></p>
 
-> Documentation is available on [GitHub Pages](https://zen0x7.github.io/Strong).
+<p align="center"  style="margin-bottom: 50px;">
+Documentation is available on <a href="https://zen0x7.github.io/Strong" target="_blank"><strong>GitHub Pages</strong></a>.
+</p>
 
 <p align="center">
 <a href="https://github.com/Zen0x7/Strong/actions/workflows/ci.yml"><img src="https://github.com/Zen0x7/Strong/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
