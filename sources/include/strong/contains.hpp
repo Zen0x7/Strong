@@ -8,7 +8,6 @@
 #ifndef STRONG_CONTAINS_HPP
 #define STRONG_CONTAINS_HPP
 
-#include <optional>
 #include <string_view>
 
 namespace strong {
