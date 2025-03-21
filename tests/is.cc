@@ -7,9 +7,8 @@
 
 #include <strong/is.hpp>
 
-TEST(Strong, Is)
-{
-    ASSERT_TRUE(strong::is("abcdef", "abc.*"));
-    ASSERT_FALSE(strong::is("000000", "abc.*"));
-    ASSERT_FALSE(strong::is("000000", "(*invalid)"));
+TEST(Strong, Is) {
+  ASSERT_TRUE(strong::is("abcdef", "abc.*"));
+  ASSERT_FALSE(strong::is("000000", "abc.*"));
+  ASSERT_FALSE(strong::is("000000", "(*invalid)"));
 }

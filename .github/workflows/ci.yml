@@ -14,7 +14,7 @@ jobs:
       - name: Build and test
         run: |
           apt update
-          apt install -y lcov doxygen graphviz
+          apt install -y lcov doxygen graphviz rsync
           curl -Os https://cli.codecov.io/latest/linux/codecov
           chmod +x codecov
           git clone https://github.com/jothepro/doxygen-awesome-css.git

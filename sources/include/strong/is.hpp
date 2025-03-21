@@ -10,8 +10,7 @@
 
 #include <string_view>
 
-namespace strong
-{
+namespace strong {
 /**
  * Determines if content complains with some regular expression.
  *
@@ -20,6 +19,6 @@ namespace strong
  * @return The boolean result.
  */
 bool is(std::string_view content, std::string_view expression);
-} // namespace strong
+}  // namespace strong
 
 #endif

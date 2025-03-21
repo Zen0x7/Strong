@@ -11,8 +11,7 @@
 #include <optional>
 #include <string_view>
 
-namespace strong
-{
+namespace strong {
 /**
  * Retrieve the char on a specific index.
  *
@@ -21,6 +20,6 @@ namespace strong
  * @return The optional char.
  */
 std::optional<unsigned char> char_at(std::string_view content, std::size_t at);
-} // namespace strong
+}  // namespace strong
 
 #endif

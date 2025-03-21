@@ -7,9 +7,8 @@
 
 #include <strong/replace.hpp>
 
-TEST(Strong, Replace)
-{
-    ASSERT_EQ(strong::replace("abcdef", "abc", "zzz"), "zzzdef");
-    ASSERT_EQ(strong::replace("hello-world", "hello", "mine"), "mine-world");
-    ASSERT_EQ(strong::replace("hello-world", "develop", "mine"), "hello-world");
+TEST(Strong, Replace) {
+  ASSERT_EQ(strong::replace("abcdef", "abc", "zzz"), "zzzdef");
+  ASSERT_EQ(strong::replace("hello-world", "hello", "mine"), "mine-world");
+  ASSERT_EQ(strong::replace("hello-world", "develop", "mine"), "hello-world");
 }

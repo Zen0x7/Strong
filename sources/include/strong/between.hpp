@@ -11,8 +11,7 @@
 #include <optional>
 #include <string_view>
 
-namespace strong
-{
+namespace strong {
 /**
  * Retrieves the string portion between two strings.
  *
@@ -21,7 +20,9 @@ namespace strong
  * @param end The finish portion that will be searched.
  * @return The optional string.
  */
-std::optional<std::string_view> between(std::string_view content, std::string_view begin, std::string_view end);
-} // namespace strong
+std::optional<std::string_view> between(std::string_view content,
+                                        std::string_view begin,
+                                        std::string_view end);
+}  // namespace strong
 
 #endif

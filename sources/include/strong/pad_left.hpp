@@ -11,8 +11,7 @@
 #include <string>
 #include <string_view>
 
-namespace strong
-{
+namespace strong {
 /**
  * Retrieves a left padded string.
  *
@@ -23,6 +22,6 @@ namespace strong
  * then returns the content.
  */
 std::string pad_left(std::string_view content, std::size_t length, char pad);
-} // namespace strong
+}  // namespace strong
 
 #endif

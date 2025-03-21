@@ -11,8 +11,7 @@
 #include <string>
 #include <string_view>
 
-namespace strong
-{
+namespace strong {
 /**
  * Replaces a portion of string with something.
  *
@@ -21,7 +20,8 @@ namespace strong
  * @param with The replacement.
  * @return The replaced string.
  */
-std::string replace(std::string_view content, std::string_view find, std::string_view with);
-} // namespace strong
+std::string replace(std::string_view content, std::string_view find,
+                    std::string_view with);
+}  // namespace strong
 
 #endif

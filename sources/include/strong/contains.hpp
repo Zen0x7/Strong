@@ -10,8 +10,7 @@
 
 #include <string_view>
 
-namespace strong
-{
+namespace strong {
 /**
  * Determines if a string contains something.
  *
@@ -20,6 +19,6 @@ namespace strong
  * @return The boolean result.
  */
 bool contains(std::string_view content, std::string_view search);
-} // namespace strong
+}  // namespace strong
 
 #endif
