@@ -7,9 +7,10 @@
 
 #include <strong/ends_with.hpp>
 
-TEST(Strong, EndsWith) {
-  ASSERT_FALSE(strong::ends_with("abcdef", "abc"));
-  ASSERT_FALSE(strong::ends_with("defabc", "def"));
-  ASSERT_TRUE(strong::ends_with("abcdef", "def"));
-  ASSERT_TRUE(strong::ends_with("defabc", "abc"));
+TEST(Strong, EndsWith)
+{
+    ASSERT_FALSE(strong::ends_with("abcdef", "abc"));
+    ASSERT_FALSE(strong::ends_with("defabc", "def"));
+    ASSERT_TRUE(strong::ends_with("abcdef", "def"));
+    ASSERT_TRUE(strong::ends_with("defabc", "abc"));
 }

@@ -11,7 +11,8 @@
 #include <optional>
 #include <string>
 
-namespace strong {
+namespace strong
+{
 /**
  * Retrieves the string without something.
  *
@@ -19,8 +20,7 @@ namespace strong {
  * @param search The string that will be searched.
  * @return The optional string.
  */
-std::optional<std::string> except(std::string_view content,
-                                  std::string_view search);
-}  // namespace strong
+std::optional<std::string> except(std::string_view content, std::string_view search);
+} // namespace strong
 
 #endif

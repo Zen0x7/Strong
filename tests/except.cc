@@ -7,8 +7,9 @@
 
 #include <strong/except.hpp>
 
-TEST(Strong, Except) {
-  ASSERT_EQ(strong::except("abcdef", "cd").value(), "abef");
-  ASSERT_FALSE(strong::except("abcdef", "z").has_value());
-  ASSERT_EQ(strong::except("0101010101", "01").value(), "01010101");
+TEST(Strong, Except)
+{
+    ASSERT_EQ(strong::except("abcdef", "cd").value(), "abef");
+    ASSERT_FALSE(strong::except("abcdef", "z").has_value());
+    ASSERT_EQ(strong::except("0101010101", "01").value(), "01010101");
 }

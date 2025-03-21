@@ -7,9 +7,10 @@
 
 #include <strong/pad_left.hpp>
 
-TEST(Strong, PadLeft) {
-  ASSERT_EQ(strong::pad_left("00011", 3, '*'), "00011");
-  ASSERT_EQ(strong::pad_left("00011", 10, '*'), "*****00011");
-  ASSERT_EQ(strong::pad_left("10000", 10, '.'), ".....10000");
-  ASSERT_EQ(strong::pad_left("10000", 15, '.'), "..........10000");
+TEST(Strong, PadLeft)
+{
+    ASSERT_EQ(strong::pad_left("00011", 3, '*'), "00011");
+    ASSERT_EQ(strong::pad_left("00011", 10, '*'), "*****00011");
+    ASSERT_EQ(strong::pad_left("10000", 10, '.'), ".....10000");
+    ASSERT_EQ(strong::pad_left("10000", 15, '.'), "..........10000");
 }

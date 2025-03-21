@@ -7,8 +7,9 @@
 
 #include <strong/contains.hpp>
 
-TEST(Strong, Contains) {
-  ASSERT_TRUE(strong::contains("abcdef", "abc"));
-  ASSERT_TRUE(strong::contains("abcdef", "def"));
-  ASSERT_FALSE(strong::contains("abcdef", "z"));
+TEST(Strong, Contains)
+{
+    ASSERT_TRUE(strong::contains("abcdef", "abc"));
+    ASSERT_TRUE(strong::contains("abcdef", "def"));
+    ASSERT_FALSE(strong::contains("abcdef", "z"));
 }

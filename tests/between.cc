@@ -7,12 +7,12 @@
 
 #include <strong/between.hpp>
 
-TEST(Strong, Between) {
-  ASSERT_EQ(strong::between("abcdef", "ab", "ef").value(), "cd");
-  ASSERT_EQ(strong::between("ab0000000000de", "ab", "de").value(),
-            "0000000000");
-  ASSERT_EQ(strong::between("010", "0", "0").value(), "1");
-  ASSERT_EQ(strong::between("01110", "0", "0").value(), "111");
-  ASSERT_EQ(strong::between("0111011111111", "0", "0").value(), "111");
-  ASSERT_EQ(strong::between("01110111111110", "0", "0").value(), "111");
+TEST(Strong, Between)
+{
+    ASSERT_EQ(strong::between("abcdef", "ab", "ef").value(), "cd");
+    ASSERT_EQ(strong::between("ab0000000000de", "ab", "de").value(), "0000000000");
+    ASSERT_EQ(strong::between("010", "0", "0").value(), "1");
+    ASSERT_EQ(strong::between("01110", "0", "0").value(), "111");
+    ASSERT_EQ(strong::between("0111011111111", "0", "0").value(), "111");
+    ASSERT_EQ(strong::between("01110111111110", "0", "0").value(), "111");
 }

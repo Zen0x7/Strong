@@ -10,7 +10,8 @@
 
 #include <string_view>
 
-namespace strong {
+namespace strong
+{
 /**
  * Retrieves the library version.
  *
@@ -18,6 +19,6 @@ namespace strong {
  */
 std::string_view version();
 
-}  // namespace strong
+} // namespace strong
 
 #endif
