@@ -13,11 +13,11 @@
 
 namespace strong {
 /**
- * After last
+ * Retrieves the last string portion after something.
  *
- * @param content
- * @param search
- * @return std::optional<std::string_view>
+ * @param content The string that will be used.
+ * @param search The string that will be searched.
+ * @return The optional string.
  */
 std::optional<std::string_view> after_last(std::string_view content,
                                            std::string_view search);

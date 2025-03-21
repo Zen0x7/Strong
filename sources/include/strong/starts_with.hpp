@@ -12,11 +12,11 @@
 
 namespace strong {
 /**
- * Starts with
+ * Determines if a string starts with something.
  *
- * @param content
- * @param search
- * @return bool
+ * @param content The string that will be used.
+ * @param search The string that will be searched.
+ * @return The boolean result.
  */
 bool starts_with(std::string_view content, std::string_view search);
 }  // namespace strong

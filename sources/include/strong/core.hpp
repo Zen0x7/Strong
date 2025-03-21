@@ -12,9 +12,9 @@
 
 namespace strong {
 /**
- * Version
+ * Retrieves the library version.
  *
- * @return std::string_view
+ * @return The current version.
  */
 std::string_view version();
 

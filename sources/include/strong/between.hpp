@@ -13,12 +13,12 @@
 
 namespace strong {
 /**
- * Between
+ * Retrieves the string portion between two strings.
  *
- * @param content
- * @param begin
- * @param end
- * @return std::optional<std::string_view>
+ * @param content The string that will be used.
+ * @param begin The start portion that will be searched.
+ * @param end The finish portion that will be searched.
+ * @return The optional string.
  */
 std::optional<std::string_view> between(std::string_view content,
                                         std::string_view begin,

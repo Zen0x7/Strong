@@ -2,6 +2,9 @@ name: CI
 
 on: [push]
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,9 +17,11 @@ jobs:
       - name: Build and test
         run: |
           apt update
-          apt install -y lcov
+          apt install -y lcov doxygen graphviz rsync
           curl -Os https://cli.codecov.io/latest/linux/codecov
           chmod +x codecov
+          git clone https://github.com/jothepro/doxygen-awesome-css.git
+          doxygen
           mkdir build
           cd build
           cmake .. -DBUILD_TESTS=ON -DCMAKE_BUILD_TYPE=Debug
@@ -35,3 +40,10 @@ jobs:
         with:
           fail_ci_if_error: true
           files: ./coverage.info
+
+      - name: GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: docs/html
+          clean: true
